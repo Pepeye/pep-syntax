@@ -2,8 +2,8 @@
   "name": "pep-syntax",
   "theme": "syntax",
   "version": "0.0.1",
-  "description": "A short description of your syntax theme",
-  "repository": "https://github.com/atom/pep-syntax",
+  "description": "Flat UI / Seti inspired language syntax for atom",
+  "repository": "https://github.com/Pepeye/pep-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
