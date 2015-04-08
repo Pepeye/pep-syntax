@@ -1,7 +1,7 @@
 {
   "name": "pep-syntax",
   "theme": "syntax",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Flat UI / Seti inspired language syntax for atom",
   "repository": "https://github.com/Pepeye/pep-syntax",
   "license": "MIT",
