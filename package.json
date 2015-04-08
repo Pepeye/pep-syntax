@@ -1,7 +1,7 @@
 {
   "name": "pep-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A short description of your syntax theme",
   "repository": "https://github.com/atom/pep-syntax",
   "license": "MIT",
