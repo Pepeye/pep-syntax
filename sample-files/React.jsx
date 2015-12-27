@@ -1,25 +1,15 @@
-var TodoList = React.createClass({
-  render: function() {
-    var createItem = function(itemText) {
-      return <li>{itemText}</li>;
-    };
-    return <ul>{this.props.items.map(createItem)}</ul>;
-  }
-});
-var TodoApp = React.createClass({
-  getInitialState: function() {
-    return {items: [], text: ''};
-  },
-  onChange: function(e) {
-    this.setState({text: e.target.value});
-  },
-  handleSubmit: function(e) {
+import React, { PropTypes } from 'react'
+
+class App extends React.Component {
+
+  handleSubmit (e) {
     e.preventDefault();
     var nextItems = this.state.items.concat([this.state.text]);
     var nextText = '';
     this.setState({items: nextItems, text: nextText});
-  },
-  render: function() {
+  }
+
+  render () {
     return (
       <div>
         <h3>TODO</h3>
@@ -29,8 +19,15 @@ var TodoApp = React.createClass({
           <button>{'Add #' + (this.state.items.length + 1)}</button>
         </form>
       </div>
-    );
+    )
   }
-});
+}
 
-React.render(<TodoApp />, mountNode);
+function() {
+  var createItem = function(itemText) {
+    return <li>{itemText}</li>;
+  };
+  return <ul>{this.props.items.map(createItem)}</ul>;
+}
+
+export default App;
